@@ -3,25 +3,25 @@ import TaskItem, { Task } from './TaskItem'
 import { Task } from '../Types'
 
 type Props = {
-  task: Task[]
+    tasks: Task[]
 }
 
-const TaskList:React.FC<Props>  = ({ task }) => {
-  return (
-    <div className="inner">
-      {
-        TaskList.length <= 0 ? '登録されたTODOはありません';
-      <ul className="task-list">
-      { TaskList.map(task => (
-        <TaskItem
-          key={task.id}
-          task={task}
-        />
-      ))}
-      </ul>
-      }
-    </div>
-  ）
+const TaskList:React.FC<Props>  = ({ tasks }) => {
+    return (
+        <div className="inner">
+            {
+                tasks.length <= 0 ? '登録されたTODOはありません';
+                <ul className="task-list">
+                { tasks.map(task => (
+                    <TaskItem
+                        key={task.id}
+                        task={task}
+                    />
+                ))  }
+                </ul>
+            }
+        </div>
+    ）
 }
 
-export default TaskItem;
+export default TaskList

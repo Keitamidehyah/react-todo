@@ -10,11 +10,11 @@ const App:React.FC<Props>  = ({ task }) => {
       <li>
           <label>
               < input type="checkbox" className="checkbox-input" />
-                  <span className="checkbox-label">{ task.title}</span>
+                  <span className="checkbox-label">{ task.title }</span>
           </label>
               <button className="btn is-delete">削除</button>
       </li>
-    ）
+      ）
   }
 
 export default TaskItem

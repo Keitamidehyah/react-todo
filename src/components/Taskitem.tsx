@@ -1,20 +1,20 @@
 import React from 'react'
-import Task from '../Types'
+import {Task} from '../Types'
 
 type Props = {
-  task: Task
+    task: Task
 }
 
-const App:React.FC<Props>  = ({task}) => {
+const App:React.FC<Props>  = ({ task }) => {
   return (
-    <li>
-        <label>
-          <input type="checkbox" className="checkbox-input" />
-          <span className="checkbox-label">{ task.title}</span>
-        </label>
-        <button className="btn is-delete">削除</button>
-    </li>
-  ）
-}
+      <li>
+          <label>
+              < input type="checkbox" className="checkbox-input" />
+                  <span className="checkbox-label">{ task.title}</span>
+          </label>
+              <button className="btn is-delete">削除</button>
+      </li>
+    ）
+  }
 
-export default TaskItem;
+export default TaskItem

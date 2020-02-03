@@ -5,12 +5,12 @@ type Props = {
     task: Task
 }
 
-const App:React.FC<Props>  = ({ task }) => {
+const TaskItem: React.FC<Props>  = ({ task }) => {
   return (
       <li>
           <label>
               < input type="checkbox" className="checkbox-input" />
-                  <span className="checkbox-label">{ task.title }</span>
+              <span className="checkbox-label">{ task.title }</span>
           </label>
               <button className="btn is-delete">削除</button>
       </li>

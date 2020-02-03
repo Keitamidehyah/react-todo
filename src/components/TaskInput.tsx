@@ -7,7 +7,7 @@ const TaskInput: React.FC = () => {
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setInputTitle(e.target.value)
     }
-    
+
     return (
         <div className="input-from">
             <div className="inner">
@@ -16,7 +16,7 @@ const TaskInput: React.FC = () => {
                     className="input"
                     value={inputTitle}
                     onChange={handeleInputChange}
-              />
+                />
               <button className="btn is-primary">追加</button>
             </div>
         </div>
